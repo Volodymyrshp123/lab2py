@@ -21,3 +21,14 @@ final_price = amount - (amount * discount)
 print(f"Знижка: {discount * 100:.0f}%")
 print(f"Сума до сплати: {final_price:.2f} грн")
 print("Task3")
+a = int(input("Введіть довжину основи (a): "))
+h = int(input("Введіть висоту (h): "))
+S = (a * h) / 2
+print(f"Площа трикутника: {S}")
+if S //2 == 0:
+    sum = S / 2
+    print(f"Половина площі: {sum}")
+else:
+    print("Не можу ділити на 2!")
+print("Task4")
+   
