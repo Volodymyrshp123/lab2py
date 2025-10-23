@@ -42,3 +42,25 @@ else:
         total += i
     print(f"Сума всіх цілих чисел від {A} до {B} включно: {total}")
 print("Task5")
+D = int(input("Введіть число D: "))
+E = int(input("Введіть число E: "))
+if D >= E:
+        print("Помилка: D повинно бути менше за E.")
+else:
+        total = 0
+        for i in range(D, E + 1):
+            total += i ** 2
+print(f"Сума квадратів всіх цілих чисел від {D} до {E} включно: {total}")
+print("Task6")
+a = int(input("Введіть перше число (a): "))
+b = int(input("Введіть друге число (b): "))
+if a >= b:
+    print("Помилка: b повинно бути більше за a.")
+else:
+    total = 0
+    current = a
+    while current <= b:
+        total += current
+        current += 1
+    print(f"Сума всіх цілих чисел від {a} до {b} включно: {total}")
+print("Task7")
