@@ -31,4 +31,14 @@ if S //2 == 0:
 else:
     print("Не можу ділити на 2!")
 print("Task4")
-   
+A = int(input("Введіть число A: "))
+B = int(input("Введіть число B: "))
+
+if A >= B:
+    print("Помилка: A повинно бути менше за B.")
+else:
+    total = 0
+    for i in range(A, B + 1):
+        total += i
+    print(f"Сума всіх цілих чисел від {A} до {B} включно: {total}")
+print("Task5")
