@@ -79,10 +79,21 @@ K = 0
 while 5 ** K <= N:
     K += 1
 print(f"Найменше ціле K, при якому 5^{K} > {N}, це: {K}")
-print("Task8")
+print("Task9")
 M = int(input("Введіть ціле число M: "))
 m =1, 4, 9, 16, 25, 36, 49, 64, 81, 100
 for num in m:
     if num > M:
         print(num)
         break
+print("Task10")
+n = int(input("Введіть число n: "))
+a = 1
+d = 1
+
+while a <= n:
+    d += 2
+    a += d
+
+print(f"Перше число з ряду, більше за {n}: {a}")
+print("Task11")
