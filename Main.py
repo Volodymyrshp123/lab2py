@@ -64,3 +64,12 @@ else:
         current += 1
     print(f"Сума всіх цілих чисел від {a} до {b} включно: {total}")
 print("Task7")
+T = int(input("Введіть число T: "))
+if not 0 <= T <= 50:
+    print("Помилка: T повинно бути в межах від 0 до 50.")
+else:
+    p = 50
+    total = 0
+    for i in range(T, p + 1):
+        total += i ** 2
+    print(f"Сума квадратів всіх цілих чисел від {T} до {p} включно: {total}")
