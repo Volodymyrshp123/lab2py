@@ -73,3 +73,16 @@ else:
     for i in range(T, p + 1):
         total += i ** 2
     print(f"Сума квадратів всіх цілих чисел від {T} до {p} включно: {total}")
+    print("Task8")
+    N = int(input("Введіть ціле число N (>1): "))
+K = 0
+while 5 ** K <= N:
+    K += 1
+print(f"Найменше ціле K, при якому 5^{K} > {N}, це: {K}")
+print("Task8")
+M = int(input("Введіть ціле число M: "))
+m =1, 4, 9, 16, 25, 36, 49, 64, 81, 100
+for num in m:
+    if num > M:
+        print(num)
+        break
