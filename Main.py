@@ -131,3 +131,24 @@ while i < len(names) and found == 0:
 
 print("Ваш знак Зодіаку:", names[i - 1])
 print("Task12")
+unit = int(input("Введіть номер одиниці маси (1–5):\n1. Кілограм\n2. Міліграм\n3. Грам\n4. Тонна\n5. Центнер\n"))
+value = float(input("Введіть масу тіла: "))
+
+match unit:
+    case 1:  
+        mass_in_kg = value
+    case 2:  
+        mass_in_kg = value * 0.000001
+    case 3: 
+        mass_in_kg = value * 0.001
+    case 4:  
+        mass_in_kg = value * 1000
+    case 5:  
+        mass_in_kg = value * 100
+    case _:
+        mass_in_kg = None
+
+if mass_in_kg is not None:
+    print(f"Маса тіла у кілограмах: {mass_in_kg}")
+else:
+    print("Невірний номер одиниці маси.")
